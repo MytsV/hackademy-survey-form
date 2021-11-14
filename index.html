@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <span class="dot"></span>
+	<h1 id="title" class="text-3xl font-bold text-indigo-900 p-6 inline">CryptoTrade Survey</h1>
+    <p id="description" class="py-4">The survey is aimed at improving the experience of CryptoTrade School students. Please, answer the questions below</p>
+    <form id="survey-form" method="post">
+        <div id="name-div" class="py-3">
+            <label id="name-label" for="name" class="block">Your name:</label>
+            <input type="text" id="name" placeholder="Name" required class="block">
+        </div>
+        
+        <div id="email-div" class="py-3">
+            <label id="email-label" for="email" class="block">Email:</label>
+            <input type="email" id="email" placeholder="Email" required class="block">
+        </div>
+
+        <div id="number-div" class="py-3">
+            <label id="number-label" for="number" class="block">Your age:</label>
+            <input type="number" id="number" placeholder="Age" min="14" max="118" required class="block">
+        </div>
+
+        <p class="pt-2">Which type of course have you taken?</p>
+        <select class="my-4" name="Course type" id="dropdown">
+            <option value="beginner">For beginners</option>
+            <option value="advanced">For advanced users</option>
+            <option value="investor">For investors</option>
+        </select>
+        
+        <p class="py-4">How would you describe the quality of the course?</p>
+        <div id="rating1-div" class="py-1">
+            <input type="radio" id="rating1" name="rating" value="good">
+            <label for="rating1">Good</label>
+        </div>
+
+        <div id="rating2-div" class="py-1">
+            <input type="radio" id="rating2" name="rating" value="ok">
+            <label for="rating2">Ok</label>
+        </div>
+
+        <div id="rating3-div" class="py-1">
+            <input type="radio" id="rating3" name="rating" value="bad">
+            <label for="rating3">Bad</label>
+        </div>
+
+        <p class="py-4">How many hours a day did you need to finish assigments?</p>
+        <div id="durability1-div" class="py-1">
+            <input type="radio" id="durability1" name="durability" value="less-than-1">
+            <label for="durability1">Less than 1 hour</label>
+        </div>
+        
+        <div id="durability2-div" class="py-1">
+            <input type="radio" id="durability2" name="durability" value="1-2">
+            <label for="durability2">1-2 hours</label>
+        </div>
+
+        <div id="durability3-div" class="py-1">
+            <input type="radio" id="durability3" name="durability" value="3-4">
+            <label for="durability3">3-4 hours</label>
+        </div>
+
+        <div id="durability4-div" class="py-1">
+            <input type="radio" id="durability4" name="durability" value="more-than-4">
+            <label for="durability4">More than 4 hours</label>
+        </div>
+
+        <p class="py-4">What didn't you like about the course?</p>
+
+        <div id="disadvantage1-div" class="py-1">
+            <input type="checkbox" id="disadvantage1" name="disadvantages" value="teachers">
+            <label for="disadvantage1">Teachers</label>
+        </div>
+
+        <div id="disadvantage2-div" class="py-1">
+            <input type="checkbox" id="disadvantage2" name="disadvantages" value="difficulty-level">
+            <label for="disadvantage2">Difficulty level</label>
+        </div>
+
+        <div id="disadvantage3-div" class="py-1">
+            <input type="checkbox" id="disadvantage3" name="disadvantages" value="tasks">
+            <label for="disadvantage3">Tasks</label>
+        </div>
+
+        <div id="disadvantage3-div" class="py-1">
+            <input type="checkbox" id="disadvantage4" name="disadvantages" value="price">
+            <label for="disadvantage4">Price</label>
+        </div>
+        
+        <p id="textarea-label" class="py-4">Please, share some thoughts about the course</p>
+        <textarea id="textarea"></textarea>
+
+        <input type="submit" id="submit" class="button block my-5">
+    </form>
+</body>
+</html>

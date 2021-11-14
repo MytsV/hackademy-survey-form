@@ -1,0 +1,81 @@
+html {
+  --main-dark-color: #312E81;
+  --main-lighter-color: #C7D2FE;
+  --tailwind-grey: #1F2937;
+  --tailwind-light-grey: #9CA3AF;
+  --tailwind-red: #EF4444;
+  --gradient: linear-gradient(90deg, rgba(236,72,153,1) 0%, rgba(99,102,241,1) 100%);
+  --tailwind-pink: rgb(236,72,153);
+}
+
+p {
+  color: var(--tailwind-grey);
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select, textarea {
+  border: 0;
+  border-bottom: 1px solid var(--main-dark-color);
+  padding: 10px;
+  color: var(--main-dark-color);
+  font-size: 11pt;
+}
+
+input::placeholder {
+  color: var(--tailwind-light-grey);
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid var(--main-dark-color);
+}
+
+input.error:focus{
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid var(--tailwind-red);
+}
+
+.error {
+  border: 0;
+  border-bottom: 1px solid var(--tailwind-red);
+}
+
+label {
+  font-size: 11pt;
+  color: var(--main-dark-color);
+}
+
+#name-label, #number-label, #email-label {
+  font-size: 10pt;
+  font-weight: 900;
+}
+
+.button {
+  border-radius: 1em;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 5em;
+  padding-right: 5em;
+  background: var(--tailwind-pink);
+  background: var(--gradient);
+  font-weight: 999;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: var(--main-dark-color);
+  border-radius: 50%;
+  display: inline-block;
+}
